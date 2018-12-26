@@ -1,0 +1,66 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.content{
+	padding-top: 10rem;
+}
+.container{
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	max-width: 500px;
+	.row{
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 3rem; 
+		.col-4{
+			width: 33.33%;
+			display: flex;
+		    flex-direction: column;
+		    align-items: center;
+			>p{
+				font-family: Arial;
+				font-size: 13px;
+				margin: 12px 0 20px 0;
+			}
+			.price{
+				span{
+					font-weight: bold;
+					font-size: 18px;
+				}
+			}
+			.bye{
+				display: flex;
+				.btn-bye{
+					padding:9px;
+					background: #3a3a3a;
+					border: none;
+					color: #fff;
+				}
+			}
+			img{
+				align-self: center;
+				max-width: 100%;
+			}
+			.raiting{
+				width: 21%;
+				height: 11px;
+				background: url('../img/raiting.png') repeat-x;
+			}
+			.description{
+				display: none;
+			}
+			&:hover .description{
+				display: block;
+			}
+		}
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+}
+.border{
+	border: 3px solid #eb5c3e;
+}
