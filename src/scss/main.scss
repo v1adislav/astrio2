@@ -21,10 +21,12 @@
 		    flex-direction: column;
 		    align-items: center;
 		    position: relative;
+		    padding-top: 7px;
 			>p{
 				font-family: Arial;
 				font-size: 13px;
 				margin: 12px 0 20px 0;
+				padding: 0 5px 0 5px;
 			}
 			.price{
 				span{
@@ -35,6 +37,7 @@
 			.bye{
 				display: flex;
 				align-items: center;
+				padding: 0 5px 0 5px;
 				width: 100%;
 				.btn-bye{
 					padding:9px;
@@ -42,6 +45,7 @@
 					border: none;
 					color: #fff;
 					margin-left: 17px;
+					cursor: pointer;
 				}
 			}
 			img{
@@ -77,8 +81,18 @@
 				position: absolute;
 				top: calc(100% + 20px);
 				z-index: 1;
+				width: 100%;
+				margin-top: -2rem;
 				background: #fff;
 				display: none;
+				box-sizing: content-box;
+				border: 3px solid #eb5c3e;
+				border-top:none;
+				padding-top: 2rem;
+				box-shadow: 0 5px 5px 1px #d1d1d0;
+				div{
+					padding: 0px 5px 7px 7px;
+				}
 			}
 			&:hover .description{
 				display: block;
@@ -89,6 +103,15 @@
 		}
 	}
 }
-.border{
+.border:hover{
 	border: 3px solid #eb5c3e;
+	border-bottom: 0;
+	box-shadow: 0 0 5px 1px #d1d1d0;
+	.raiting{
+		z-index: 3;
+		background: url('../img/hover-raiting.png') repeat-x !important;
+	}
+	.btn-bye{
+		background: #eb5c3e !important;
+	}
 }
