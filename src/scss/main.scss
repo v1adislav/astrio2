@@ -13,6 +13,7 @@
 	max-width: 500px;
 	.row{
 		display: flex;
+		flex-wrap: wrap;
 		flex-direction: row;
 		margin-bottom: 2rem; 
 		.col-4{
@@ -113,5 +114,17 @@
 	}
 	.btn-bye{
 		background: #eb5c3e !important;
+	}
+}
+@media screen and (max-width: 500px){
+	.col-4{
+		width: 50% !important;
+		>p{
+			text-align: center;
+		}
+		.bye{
+			justify-content: space-around;
+			padding: 0 !important;
+		}
 	}
 }
